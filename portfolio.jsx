@@ -326,33 +326,33 @@ const WORKS = [
     },
   },
 ];
-
+ 
 // ── PROJECTS DATA (expanded with case study content) ───────────
 const PROJECTS = [
   {
     id: "p1",
-    title: "Dialect Engine",
-    desc: "A generative system that maps regional speech patterns onto interactive topographies. Feed it a transcript; it returns a landscape.",
-    status: "ACTIVE",
-    tech: ["Python", "D3.js", "NLP"],
+    title: "COLOBLOC",
+    desc: "A generative, system driven art installation that visualizes how neighborhoods change, disappear, or survice over time. Not through a single event, but though accumulated pressuse and collective behavior.",
+    status: "PROTOTYPE",
+    tech: ["Python","p5.js","TouchDesigner","FastAPI","OSC/Websocket","Supabase","OpenCV","GLSL"],
     detail: {
-      longDesc: "Dialect Engine ingests natural-language transcripts and performs multi-layered NLP analysis — phonetic density mapping, syntactic rhythm scoring, and lexical provenance tracing — to generate a unique topographic landscape. Mountains form from consonant clusters. Rivers trace sentence flow. Valleys appear where silence lives.",
+      longDesc: "A Phase One prototype has been devleoped to test the systems's core behaviors, including clustering, decay, and disappearance under simulated pressure conditions. This early version validates the project's central premise and informes the next stage of development.",
       process: [
-        "Transcript ingestion and speaker diarization via Whisper + pyannote",
-        "Phonetic feature extraction mapped to elevation, terrain roughness, and vegetation density",
-        "Syntactic parse trees converted to river systems — subordinate clauses become tributaries",
-        "Lexical origin analysis colors the landscape: Anglo-Saxon roots render as granite, Latinate vocabulary as sandstone, loanwords as mineral veins",
-        "Real-time D3.js rendering with flyover camera and interactive annotation layers",
+        "Input Reality Enters the System -- COLOBLOC begins by ingesting signals from the world, including housing and rent data, development activity, business turnover, and the presence or absence of people within the space. These inputs establish the conditions of the environment, not as neutral information, but as forces that will act on the system. Each data point is interpreted as a form of pressure, shaping how the system will behave over time.",
+        "Translation - Data Become System State - The incoming conditions are translated into internal states carried by each block, which represents a fragment of place such as a home, business, public space or cultural site. These states include stability, value, engagement and visiblitly. In this step, the system defines what each place is capable of holding or losing, converting external conditions into measurable internal properties.",
+        "Simulation - Rules Apply Pressure Over Time - A rule based engine continuosly updates each block based on its state and the pressures acting upon it. Rising costs reduce stability, low engagement accelerates decay, and redevelopment introduces displacemnet, while sustaines presence can temporarily slow decline. These forces are not balanced; external pressures consistently owtweigh internal resistance, allowing the system to reflect how change accumulates unevenly over time.",
+        "Visualization - The System Becomes Visible - The simulation is rendered in real-time as a field of shifiting blocks that cluster, thin out and reorganize. Color, scale, motion, and opacity encode each block's condition, allowing viewers to read the system without instruction. Subtle system messages surface within the visual field, making the underlying logic legible without interrupting the experience.",
+        "Outcome - Disapperance and Memory - Over time, unstable blocks fade and disappear without warming or dramatic cue. Their removal is not treated as deletion but as recorded outcome, marked as archived or insufficient within the system. Even when engage returns late, creating bried spikes in activity, it cannot fully restore what has already been lost. The system ultimately reveals disappearance as a culmulaive process shaped by sustained pressure and collective absence.",
       ],
-      outcomes: "Featured at the Computational Linguistics Symposium, MIT Media Lab. Used by three university linguistics departments for teaching phonology. Open-sourced under MIT license with 1,200+ GitHub stars.",
-      link: "github.com/alexmoreno/dialect-engine",
+      outcomes: "COLOBLOC is built using TouchDesigner for real-time visual simulation, with a Python-based system engine that processes live and historical data though rule-based logic, enabling a continuous, responsive installation environment.",
+      link: "github.com/thaz3/i-am-not-the-creator/colobloc",
     },
   },
   {
     id: "p2",
     title: "Grief Index",
     desc: "Data-storytelling installation: 10,000 obituaries visualized as a living, breathing constellation that shifts with collective sentiment.",
-    status: "EXHIBITED",
+    status: "ACTIVE",
     tech: ["Three.js", "Sentiment API", "WebGL"],
     detail: {
       longDesc: "Grief Index is a data-storytelling installation that transforms 10,000 publicly archived obituaries into a living constellation. Each life becomes a point of light; its brightness, color, and orbital behavior determined by sentiment analysis of the language used to remember them. The constellation breathes — expanding and contracting with the collective emotional weight of the dataset.",
@@ -782,19 +782,29 @@ function ProjectDetail({ project, onClose }) {
         {/* Process */}
         <div style={{ marginBottom: "36px" }}>
           <p style={{ fontFamily: "var(--mono)", fontSize: "9px", letterSpacing: "0.2em", color: "var(--accent)", marginBottom: "20px" }}>PROCESS & ARCHITECTURE</p>
-          {d.process.map((step, i) => (
-            <div key={i} style={{ display: "flex", gap: "16px", marginBottom: "16px", alignItems: "flex-start" }}>
-              <span style={{ fontFamily: "var(--mono)", fontSize: "10px", color: "var(--accent)", opacity: 0.5, flexShrink: 0, marginTop: "4px" }}>
-                {String(i + 1).padStart(2, "0")}
-              </span>
-              <p style={{ fontFamily: "var(--mono)", fontSize: "12px", lineHeight: 1.7, color: "var(--text-secondary)" }}>{step}</p>
-            </div>
-          ))}
+          {d.process.map((step, i) => {
+            const dashMatch = step.match(/^(.+?)\s+(?:—|--|–|-)\s+(.+)$/s);
+            const headline = dashMatch ? dashMatch[1] : null;
+            const body = dashMatch ? dashMatch[2] : step;
+            return (
+              <div key={i} style={{ display: "flex", gap: "16px", marginBottom: "20px", alignItems: "flex-start" }}>
+                <span style={{ fontFamily: "var(--mono)", fontSize: "10px", color: "var(--accent)", opacity: 0.5, flexShrink: 0, marginTop: "4px" }}>
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <div>
+                  {headline && (
+                    <p style={{ fontFamily: "var(--mono)", fontSize: "12px", fontWeight: 700, color: "var(--accent)", marginBottom: "6px", letterSpacing: "0.03em" }}>{headline}</p>
+                  )}
+                  <p style={{ fontFamily: "var(--mono)", fontSize: "12px", lineHeight: 1.7, color: "var(--text-secondary)" }}>{body}</p>
+                </div>
+              </div>
+            );
+          })}
         </div>
 
         {/* Outcomes */}
         <div style={{ marginBottom: d.link ? "36px" : "0", padding: "24px", background: "var(--bg-elevated)", border: "1px solid var(--border)", borderRadius: "2px" }}>
-          <p style={{ fontFamily: "var(--mono)", fontSize: "9px", letterSpacing: "0.2em", color: "var(--accent)", marginBottom: "12px" }}>OUTCOMES & RECOGNITION</p>
+          <p style={{ fontFamily: "var(--mono)", fontSize: "9px", letterSpacing: "0.2em", color: "var(--accent)", marginBottom: "12px" }}>TECHNICAL SUMMARY</p>
           <p style={{ fontFamily: "var(--serif)", fontSize: "13px", lineHeight: 1.7, color: "var(--text-secondary)" }}>{d.outcomes}</p>
         </div>
 
