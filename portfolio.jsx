@@ -336,13 +336,13 @@ const PROJECTS = [
     status: "PROTOTYPE",
     tech: ["Python","p5.js","TouchDesigner","FastAPI","OSC/Websocket","Supabase","OpenCV","GLSL"],
     detail: {
-      longDesc: "A Phase One prototype has been devleoped to test the systems's core behaviors, including clustering, decay, and disappearance under simulated pressure conditions. This early version validates the project's central premise and informes the next stage of development.",
+      longDesc: "A Phase One prototype has been developed to test the systems's core behaviors, including clustering, decay, and disappearance under simulated pressure conditions. This early version validates the project's central premise and informs the next stage of development.",
       process: [
-        "Input Reality Enters the System -- COLOBLOC begins by ingesting signals from the world, including housing and rent data, development activity, business turnover, and the presence or absence of people within the space. These inputs establish the conditions of the environment, not as neutral information, but as forces that will act on the system. Each data point is interpreted as a form of pressure, shaping how the system will behave over time.",
-        "Translation - Data Become System State - The incoming conditions are translated into internal states carried by each block, which represents a fragment of place such as a home, business, public space or cultural site. These states include stability, value, engagement and visiblitly. In this step, the system defines what each place is capable of holding or losing, converting external conditions into measurable internal properties.",
-        "Simulation - Rules Apply Pressure Over Time - A rule based engine continuosly updates each block based on its state and the pressures acting upon it. Rising costs reduce stability, low engagement accelerates decay, and redevelopment introduces displacemnet, while sustaines presence can temporarily slow decline. These forces are not balanced; external pressures consistently owtweigh internal resistance, allowing the system to reflect how change accumulates unevenly over time.",
-        "Visualization - The System Becomes Visible - The simulation is rendered in real-time as a field of shifiting blocks that cluster, thin out and reorganize. Color, scale, motion, and opacity encode each block's condition, allowing viewers to read the system without instruction. Subtle system messages surface within the visual field, making the underlying logic legible without interrupting the experience.",
-        "Outcome - Disapperance and Memory - Over time, unstable blocks fade and disappear without warming or dramatic cue. Their removal is not treated as deletion but as recorded outcome, marked as archived or insufficient within the system. Even when engage returns late, creating bried spikes in activity, it cannot fully restore what has already been lost. The system ultimately reveals disappearance as a culmulaive process shaped by sustained pressure and collective absence.",
+        "INPUT REALITY: Enter the System -- COLOBLOC begins by ingesting signals from the world, including housing and rent data, development activity, business turnover, and the presence or absence of people within the space. These inputs establish the conditions of the environment, not as neutral information, but as forces that will act on the system. Each data point is interpreted as a form of pressure, shaping how the system will behave over time.",
+        "TRANSLATION: Data Become System State - The incoming conditions are translated into internal states carried by each block, which represents a fragment of place such as a home, business, public space or cultural site. These states include stability, value, engagement and visiblitly. In this step, the system defines what each place is capable of holding or losing, converting external conditions into measurable internal properties.",
+        "SIMULATION: Rules Apply Pressure Over Time - A rule based engine continuosly updates each block based on its state and the pressures acting upon it. Rising costs reduce stability, low engagement accelerates decay, and redevelopment introduces displacemnet, while sustaines presence can temporarily slow decline. These forces are not balanced; external pressures consistently owtweigh internal resistance, allowing the system to reflect how change accumulates unevenly over time.",
+        "VISUALIZATION: The System Becomes Visible - The simulation is rendered in real-time as a field of shifiting blocks that cluster, thin out and reorganize. Color, scale, motion, and opacity encode each block's condition, allowing viewers to read the system without instruction. Subtle system messages surface within the visual field, making the underlying logic legible without interrupting the experience.",
+        "OUTCOME: Disapperance and Memory - Over time, unstable blocks fade and disappear without warming or dramatic cue. Their removal is not treated as deletion but as recorded outcome, marked as archived or insufficient within the system. Even when engage returns late, creating bried spikes in activity, it cannot fully restore what has already been lost. The system ultimately reveals disappearance as a culmulaive process shaped by sustained pressure and collective absence.",
       ],
       outcomes: "COLOBLOC is built using TouchDesigner for real-time visual simulation, with a Python-based system engine that processes live and historical data though rule-based logic, enabling a continuous, responsive installation environment.",
       link: "github.com/thaz3/i-am-not-the-creator/colobloc",
@@ -350,37 +350,39 @@ const PROJECTS = [
   },
   {
     id: "p2",
-    title: "Grief Index",
-    desc: "Data-storytelling installation: 10,000 obituaries visualized as a living, breathing constellation that shifts with collective sentiment.",
+    title: "THE BLACK WHOLE",
+    desc: "A man embedded in a system fractures, accesses a deeper self, confronts the forces shaping him, and rerurns changed...but not free.",
     status: "ACTIVE",
-    tech: ["Three.js", "Sentiment API", "WebGL"],
+    tech: ["Midjourney", "Adobe Photoshop", "Blender","Adobe After Effects", "Unreal Engine", "TouchDesigner", "Python", "ElevenLabs"],
     detail: {
-      longDesc: "Grief Index is a data-storytelling installation that transforms 10,000 publicly archived obituaries into a living constellation. Each life becomes a point of light; its brightness, color, and orbital behavior determined by sentiment analysis of the language used to remember them. The constellation breathes — expanding and contracting with the collective emotional weight of the dataset.",
+      longDesc: "The Black Whole is a real-time cinematic system where characters, environment, and perception interact to simulate what if feels like to break from the systems that define you.",
       process: [
-        "Corpus of 10,000 obituaries from 1990–2023 ethically sourced from public newspaper archives",
-        "Custom sentiment model trained on memorial language (standard sentiment tools misread grief as 'negative')",
-        "Each obituary mapped to a star: luminosity = word count, color temperature = sentiment valence, orbital radius = temporal distance from present",
-        "Collective 'breathing' animation driven by rolling sentiment averages — the constellation contracts during periods of communal grief",
-        "Visitors can search for names; their star brightens and its obituary text unfurls in the void",
+        "EMBEDDED: The System Holds Him - A Queens NYPD detective moves through his daily routine with precision, familiarity, and a sense of control. He knows the streets, the rhythms of the neighborhood, but his role requires distance from all of it. To some, he represents order, to others, surveillance. He exists between, carryinf both identities but fully belonging to neither. The system around him is not chaotic or broken, it is stable, functional and deeply ingrained. That stability is what makes it invisible.",
+        "FRACTURE: THE SYSTEM SLIPS -- A routine moment begins to misalign. A familiar situation doesn't resolve the way it should. Time stretches. Sound lingers. Movements repeat slightly out of sync. The environment does not collapse, but it stops behaving consistently. A subtle destabilizartion, enough to expose that something underneath has always been operating. The moment carries a history of violence. The system does not fail; it reveals its structure.",
+        "ACCESS: ENTER THE BLACK WHOLE -- Through an altered state, his perception shifts. The world loosens, and the boundaries between memory, present, and possibility blur. He enters the Black Whole; a space that is not separate from reality, but layered within it. Here, identity is no longer fixed. He encounters fragments of self and histoy coexisting at once. Flyboy emerges. Not as another person, but as a version of himself that exists outside the constraints he has accepted.",
+        "CONFRONTATION: SELF VS. SYSTEM - Inside this space, he is forced to face the accumulation of who he has been. The sysem applies pressure through memory, consequence, and contradiction. He sees himself as officer, as commmunty, as participanct, and as product; all at once. These identites do not reconcile easily. Flyboy does not guide or save him, but stands as a possibilty: a self not defined by compliance or role. The tension is not about destoying the system, but about recognizing how deeply it has spahed his understanding of himself.",
+        "EMERGENCE: AWARENESS THAT REMAINS - He returns to the world he knows, but it no longer feels singular. The structures are still intact, teh roles unchanged, but everything now carries an added layer of meaning. The city feels thinner, as if multiple realities exist at once. His actions, even small onces, hold more weight. There is no clear reslution, no clear trnasformation. Instead there is a shift in awareness that cannot be undone. The system continues to operate, but he is no longer fully contained by it.",
       ],
-      outcomes: "Exhibited at the Whitney Museum Digital Art Annex, 2023. Acquired by the Smithsonian for their permanent digital collection. Subject of a feature essay in Wired Magazine.",
-      link: null,
+      outcomes: `The Black Whole is a hybrid generative cinematic system that bridges AI latent space with real time architectural logic. The pipeline begins with an AI training layer and custom tuned models to establish a consistent Afrofuturistic visual language across characters, environments, and fractured states. These generated assets are then ingested into a real time 3D engine, where they are mapped only dynamic geometry and controlled by a state-driven architecture.
+
+      In this framework, the protagonists internal condition functions as a system variable, triggering real-time procedural effects—such as spatial distortion, temporal delay, and lighting shifts—that manipulate the AI-generated imagery. By combining the high-fidelity texture of generative synthesis with the responsive logic of a game engine, the project moves beyond static video. The result is an evolving, system-driven environment that can manifest as a cinematic film, an interactive installation, or a live performance framework within the broader **I AM NOT THE CREATOR** ecosystem.`,
+      link: "github.com/thaz3/i-am-not-the-creator/the-black-whole",
     },
   },
   {
     id: "p3",
-    title: "Stage Machine",
-    desc: "An open-source tool for playwrights: algorithmic blocking suggestions generated from script analysis and spatial heuristics.",
+    title: "BY THE CREATOR",
+    desc: "A system generated text work that cycles through conflicting claims of authorship, dissolving the idea of a single creator into a distributed, unstable condition.",
     status: "BETA",
-    tech: ["React", "TensorFlow.js", "SVG"],
+    tech: ["Adobe Creative Cloud", "Python", "p5.js", "Davinci Resolve", "TouchDesigner"],
     detail: {
       longDesc: "Stage Machine reads a play script and generates intelligent blocking suggestions — where actors should stand, move, and face — based on dramatic analysis. It understands power dynamics in dialogue, emotional intensity curves, and the spatial grammar of theatre. Directors get a starting point; playwrights get a visualization tool for the stage pictures in their heads.",
       process: [
-        "Script parser that identifies characters, entrances/exits, stage directions, and dialogue beats",
-        "TensorFlow.js model trained on 500+ annotated production prompt books from Broadway and West End archives",
-        "Spatial heuristic engine that maps dramatic tension to stage geometry — confrontation scenes push characters apart, intimacy pulls them together",
-        "SVG stage view with drag-to-override: directors can accept, modify, or reject any suggestion",
-        "Export to PDF prompt book format or integrate with lighting design software via DMX protocol",
+        "DEFINE THE CONCEPTUAL SYSTEM - ",
+        "DEVELOP THE VISUAL LANGUAGE - ",
+        "BUILD THE MOTION BEHAVIOR -",
+        "STRUCTURE THE LOOPING SEQUENCE - ",
+        "RENDER THE FINAL WORK - ",
       ],
       outcomes: "Beta testing with 40+ theatre companies worldwide. Endorsed by the Stage Directors and Choreographers Society. Integration partnership with QLab pending.",
       link: "github.com/alexmoreno/stage-machine",
@@ -767,7 +769,7 @@ function ProjectDetail({ project, onClose }) {
             <span style={{ fontFamily: "var(--mono)", fontSize: "10px", letterSpacing: "0.15em", color: statusColors[project.status] }}>{project.status}</span>
           </div>
           <h2 style={{ fontFamily: "var(--mono)", fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 700, color: "var(--text-primary)", letterSpacing: "0.03em", marginBottom: "12px" }}>{project.title}</h2>
-          <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
+          <div style={{ display: "flex", gap: "10px", flexWrap: "wrap", justifyContent: "center" }}>
             {project.tech.map((t) => (
               <span key={t} style={{ fontFamily: "var(--mono)", fontSize: "10px", color: "var(--accent-dim)", letterSpacing: "0.08em", padding: "3px 10px", border: "1px solid var(--border)", borderRadius: "1px" }}>{t}</span>
             ))}
@@ -781,22 +783,20 @@ function ProjectDetail({ project, onClose }) {
 
         {/* Process */}
         <div style={{ marginBottom: "36px" }}>
-          <p style={{ fontFamily: "var(--mono)", fontSize: "9px", letterSpacing: "0.2em", color: "var(--accent)", marginBottom: "20px" }}>PROCESS & ARCHITECTURE</p>
+          <p style={{ fontFamily: "var(--mono)", fontSize: "16px", letterSpacing: "0.2em", color: "var(--accent)", marginBottom: "20px" }}>PROCESSES & ARCHITECTURE</p>
           {d.process.map((step, i) => {
             const dashMatch = step.match(/^(.+?)\s+(?:—|--|–|-)\s+(.+)$/s);
             const headline = dashMatch ? dashMatch[1] : null;
             const body = dashMatch ? dashMatch[2] : step;
             return (
-              <div key={i} style={{ display: "flex", gap: "16px", marginBottom: "20px", alignItems: "flex-start" }}>
-                <span style={{ fontFamily: "var(--mono)", fontSize: "10px", color: "var(--accent)", opacity: 0.5, flexShrink: 0, marginTop: "4px" }}>
+              <div key={i} style={{ marginBottom: "20px", textAlign: "center" }}>
+                <span style={{ fontFamily: "var(--mono)", fontSize: "10px", color: "var(--accent)", opacity: 0.5 }}>
                   {String(i + 1).padStart(2, "0")}
                 </span>
-                <div>
-                  {headline && (
-                    <p style={{ fontFamily: "var(--mono)", fontSize: "12px", fontWeight: 700, color: "var(--accent)", marginBottom: "6px", letterSpacing: "0.03em" }}>{headline}</p>
-                  )}
-                  <p style={{ fontFamily: "var(--mono)", fontSize: "12px", lineHeight: 1.7, color: "var(--text-secondary)" }}>{body}</p>
-                </div>
+                {headline && (
+                  <p style={{ fontFamily: "var(--mono)", fontSize: "12px", fontWeight: 700, color: "var(--accent)", marginBottom: "6px", letterSpacing: "0.03em" }}>{headline}</p>
+                )}
+                <p style={{ fontFamily: "var(--mono)", fontSize: "12px", lineHeight: 1.7, color: "var(--text-secondary)" }}>{body}</p>
               </div>
             );
           })}
@@ -804,8 +804,16 @@ function ProjectDetail({ project, onClose }) {
 
         {/* Outcomes */}
         <div style={{ marginBottom: d.link ? "36px" : "0", padding: "24px", background: "var(--bg-elevated)", border: "1px solid var(--border)", borderRadius: "2px" }}>
-          <p style={{ fontFamily: "var(--mono)", fontSize: "9px", letterSpacing: "0.2em", color: "var(--accent)", marginBottom: "12px" }}>TECHNICAL SUMMARY</p>
-          <p style={{ fontFamily: "var(--serif)", fontSize: "13px", lineHeight: 1.7, color: "var(--text-secondary)" }}>{d.outcomes}</p>
+          <p style={{ fontFamily: "var(--mono)", fontSize: "16px", letterSpacing: "0.2em", color: "var(--accent)", marginBottom: "12px" }}>TECHNICAL SUMMARY</p>
+          {d.outcomes.split(/\n\n/).map((para, pi) => (
+            <p key={pi} style={{ fontFamily: "var(--serif)", fontSize: "13px", lineHeight: 1.7, color: "var(--text-secondary)", marginBottom: "14px" }}>
+              {para.split(/\*\*(.+?)\*\*/).map((chunk, ci) =>
+                ci % 2 === 1
+                  ? <span key={ci} style={{ fontFamily: "var(--mono)", fontWeight: 700, color: "#ffffff", letterSpacing: "0.08em", fontSize: "14px" }}>{chunk}</span>
+                  : <span key={ci}>{chunk}</span>
+              )}
+            </p>
+          ))}
         </div>
 
         {/* Link */}
@@ -1322,11 +1330,11 @@ function LabCard({ project, index, onOpen }) {
       <p style={{ fontFamily: "var(--serif)", fontSize: "14px", lineHeight: 1.7, color: "var(--text-secondary)", marginBottom: "24px" }}>{project.desc}</p>
       <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
         {project.tech.map((t) => (
-          <span key={t} style={{ fontFamily: "var(--mono)", fontSize: "10px", color: "var(--accent-dim)", letterSpacing: "0.08em", padding: "3px 10px", border: "1px solid var(--border)", borderRadius: "1px" }}>{t}</span>
+          <span key={t} style={{ fontFamily: "var(--mono)", fontSize: "10px", color: "var(--accent-dim)", letterSpacing: "0.08em", padding: "3px 10px", border: "1px solid var(--border)", borderRadius: "1px", justifyContent: "center" }}>{t}</span>
         ))}
       </div>
       <div style={{ position: "absolute", bottom: "12px", right: "16px", fontFamily: "var(--mono)", fontSize: "9px", color: "var(--accent)", opacity: hovered ? 0.7 : 0, transition: "opacity 0.3s ease", letterSpacing: "0.1em" }}>
-        VIEW CASE STUDY →
+        SCAN →
       </div>
     </div>
   );
