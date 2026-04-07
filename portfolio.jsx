@@ -432,7 +432,26 @@ const PROJECTS = [
   },
   {
     id: "p6",
-    title: "LIVING ARCHIVES`",
+    title: "LIVING ARCHIVES",
+    desc: "A generative system that models how pressure, attention, and time continuously reshape environments.",
+    status: "PROTOTYPE",
+    tech: ["Web Audio", "BLE", "Canvas"],
+    detail: {
+      longDesc: "A real-time system designed to simulate how order breaks down and reorganizes under shifting conditions. It applies external pressure, tracks engagement, and recalculates stability continuously, producing environmnets tht evolve rather than repeat. It is not a single artwork, but a framework that generates them.",
+      process: [
+        "Custom BLE wristbands with heart rate + GSR sensors, 50ms sampling rate",
+        "Edge computing hub aggregates 200+ simultaneous sensor streams with <100ms latency",
+        "Web Audio API synthesis engine with four layers: heartbeat percussion, GSR harmonic drones, movement-triggered melodic fragments, and collective 'breath' dynamics",
+        "Canvas visualization projected in the venue: a living heatmap of the audience's emotional landscape",
+        "Post-show 'emotional score' generated as a keepsake — a unique piece of music that only that audience, on that night, could have created",
+      ],
+      outcomes: "The Chaos Engine is a real-time generative system that models how external pressure and collective engagement interact over time. Built using creative coding frameworks and designed for integration with tools such as TouchDesigner, the system continuously updates a field of agents (blocks), each governed by variables including pressure, engagement, and stability. These values are recalculated dynamically, triggering state changes such as stabilization, decay, disappearance, and reseeding. The system operates as a continuous loop rather than a fixed sequence, allowing environments to evolve responsively based on both internal logic and live input. Designed as a modular framework, the Chaos Engine can be adapted across datasets, contexts, and installations, functioning as the underlying logic for works such as COLOBLOC.",
+      link: null,
+    },
+  },
+  {
+    id: "p7",
+    title: "AINT NO DOPE",
     desc: "A generative system that models how pressure, attention, and time continuously reshape environments.",
     status: "PROTOTYPE",
     tech: ["Web Audio", "BLE", "Canvas"],
